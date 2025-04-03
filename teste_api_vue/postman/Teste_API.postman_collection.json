@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "5f10699f-c452-4e08-9897-0e4c01d65d9b",
+		"name": "Teste_API",
+		"description": "API de busca de operadoras de planos de saúde ativas, através do .csv disponível em: [https://dadosabertos.ans.gov.br/FTP/PDA/operadoras_de_plano_de_saude_ativas/](https://dadosabertos.ans.gov.br/FTP/PDA/operadoras_de_plano_de_saude_ativas/)\n\nNo endpoint get de buscar operadoras, para realizar uma busca, é necessário inserir após o `query=` o nome fantasia da operadora desejada sem utilizar aspas, a API retornará um JSON com até 15 resultados, com base no que foi digitado.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26783505"
+	},
+	"item": [
+		{
+			"name": "Buscar Operadora",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/search?query=",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"search"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

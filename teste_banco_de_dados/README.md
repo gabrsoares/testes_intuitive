@@ -1,0 +1,2 @@
+- Utilizei PostgreSQL para a consulta das queries
+- É necessário alterar o caminho das pastas dos arquivos, caso as bases de dados estejam em outro lugar.
